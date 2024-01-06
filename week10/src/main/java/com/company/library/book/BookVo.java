@@ -15,7 +15,7 @@ public class BookVo {
 	String	b_publish_year;
 	String	b_isbn;
 	String	b_call_number;
-	int		rental_able;
+	int		b_rantal_able;
 	String	b_reg_date;
 	String	b_mod_date;
 	

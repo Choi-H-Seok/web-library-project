@@ -12,9 +12,9 @@
 		
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url" value="jdbc:mysql://127.0.0.1:3306/final_project"/>
+		<property name="url" value="jdbc:mysql://127.0.0.1:3306/db_library"/>
 		<property name="username" value="root"/>
-		<property name="password" value="qwe423569"/>
+		<property name="password" value="rootpw"/>
 	</bean>
 	
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">

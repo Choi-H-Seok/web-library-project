@@ -1,5 +1,7 @@
 package com.company.library.book.admin;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,6 +28,12 @@ public class BookService {
 		} else {
 			return 0;
 		}
+	}
+
+	public List<BookVo> searchBookConfirm(BookVo bookVo) {
+		System.out.println("[BookService] searchBookConfirm()");
+		
+		return bookDao.selectBooksBySearch(bookVo);
 	}
 
 }
