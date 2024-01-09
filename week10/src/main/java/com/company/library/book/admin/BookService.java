@@ -42,4 +42,16 @@ public class BookService {
 		return bookDao.selectBook(b_no);
 	}
 
+	public BookVo bookUpdate(int b_no) {
+		System.out.println("[BookService] bookDetail()");
+		
+		return bookDao.selectBook(b_no);
+	}
+
+	public int modifyBookConfirm(BookVo bookVo) {
+		System.out.println("[BookService] modifyBookConfirm()");
+		
+		return bookDao.updateBook(bookVo);
+	}
+
 }
